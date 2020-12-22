@@ -6,6 +6,11 @@ import SwiftUI
 @available(OSX 10.15, *)
 public struct IndicatorKun: View {
     @State var isAnimation = false
+    
+    public init() {
+        
+    }
+    
     public var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 8)
