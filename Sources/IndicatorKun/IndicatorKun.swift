@@ -4,9 +4,9 @@ import SwiftUI
 @available(tvOS 13.0, *)
 @available(watchOS 6.0, *)
 @available(OSX 10.15, *)
-struct IndicatorKun: View {
+public struct IndicatorKun: View {
     @State var isAnimation = false
-    var body: some View {
+    public var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 8)
                 .frame(width: 200, height: 120, alignment: .center)
