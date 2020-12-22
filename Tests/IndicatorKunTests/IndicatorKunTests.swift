@@ -12,11 +12,20 @@ final class IndicatorKunTests: XCTestCase {
         view = .init()
     }
     
-    func testExample() {
+    func test_isAnimation() {
         XCTAssertEqual(view.isAnimation, false)
+    }
+    
+    func test_title() {
+        XCTAssertEqual(view.title, "読み込み中")
+        
+        view = .init(title: "少々お待ちください")
+        
+        XCTAssertEqual(view.title, "少々お待ちください")
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("test_isAnimation", test_isAnimation),
+        ("test_title", test_title)
     ]
 }

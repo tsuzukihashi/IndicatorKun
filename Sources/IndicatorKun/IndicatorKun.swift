@@ -6,9 +6,10 @@ import SwiftUI
 @available(OSX 10.15, *)
 public struct IndicatorKun: View {
     @State var isAnimation = false
+    let title: String
     
-    public init() {
-        
+    public init(title: String = "読み込み中") {
+        self.title = title
     }
     
     public var body: some View {
